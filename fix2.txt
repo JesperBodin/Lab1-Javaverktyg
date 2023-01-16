@@ -49,4 +49,7 @@ git commit -m 'Add additional git commands to fix2.txt'
 git checkout main
 git merge feature3
 git pull --no-rebase
+notepad fix2.txt
+git add fix2.txt
+git commit
 git push --all
