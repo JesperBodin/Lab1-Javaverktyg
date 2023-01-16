@@ -1,0 +1,39 @@
+git init
+git branch -M main
+new-item README.md
+notepad README.md
+git add README.md
+git commit -m 'Initial commit'
+git branch feature1
+git checkout feature1
+notepad README.md
+git add README.md
+git commit -m 'Add dog and replace moose with mouse'
+git checkout main
+notepad README.md
+git add README.md
+git commit -m 'Change moose to mahmut'
+git merge feature1
+notepad README.md
+git add README.md
+git commit -m 'Merge branch feature1'
+git tag extinct
+git reset --hard 98a8
+git branch feature2
+notepad README.md
+git add README.md
+git commit -m 'Fix uppercase'
+git checkout feature2
+new-item fix1.txt
+git add fix1.txt
+git commit -m 'Add fix1.txt'
+new-item fix2.txt
+git add fix2.txt
+git commit -m 'Add fix2.txt'
+git checkout main
+git cherry-pick b8c8
+notepad fix2.txt
+
+git remote add origin https://github.com/JesperBodin/Lab1-Javaverktyg.git
+git push -u origin --all
+git push --tags
